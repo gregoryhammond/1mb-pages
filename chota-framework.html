@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Milligram Framework | 1MB Web Pages</title>
-  <meta name="description" content="All web pages on this site are 1MB or less in size (and downloaded client-side).">
+  <title>Chota Framework | 1MB Web Pages</title>
+  <meta name="description" content="Chota framework on a website that is less than 1mb in size.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicon, thanks to https://realfavicongenerator.net
@@ -18,31 +18,39 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- Milligram framework (https://milligram.io/) served by JSDelivr(https://www.jsdelivr.com). -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/milligram@1.4.1/dist/milligram.min.css" integrity="sha256-baSxKEISHdSAWiipPkWRuquIMjgNIR//a++CyhnQdIM=" crossorigin="anonymous">
+  <!-- Chota framework (https://jenil.github.io/chota/) served by JSDelivr(https://www.jsdelivr.com). -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chota@0.8.0/dist/chota.min.css" integrity="sha256-HYnrvTAljZfNRBozicSY2ewTigOwN9ffU5un3O6zokI=" crossorigin="anonymous">
+
+  <!-- My own modifications to Chota to ensure it is better to use for everyone. Have to use !important to overwrite the framework.  -->
+  <style>
+      .row
+      {
+          margin-right: 0 !important;
+      }
+  </style>
 
 </head>
 
 <body>
-    <div class="container">
-
         <div class="row">
-            <div class="column">
-                <h1>Milligram Framework</h1>
+            <div class="col">
+                <h1>Chota Framework</h1>
             </div> <!-- end of column -->
         </div> <!-- end of row -->
     <br>
 
     <div class="row">
 
-        <div class="column">
-            <!-- TODO: Chnage this. -->
-           Milligram framework <a href="https://github.com/milligram/milligram/releases/tag/v1.0.0">version 1.0.0 was released on github on December 26th 2015</a> and has only grown since. It has been kept a small framework on purpose. 
-           <br> <br>
-           It was created by and is still maintained by <a href="https://twitter.com/cjpatoilo">CJ Patoilo</a>. 
+        <div class="col">
+            <!-- Info about Chota Framework here. -->
+            Chota is a CSS framework that is around 3kb, which could be considered micro.
+            <br> <br>
+            Chota's first release was March 31st 2017, <a href="https://github.com/jenil/chota/releases/tag/v0.1.0">version 0.1.0</a>, with <a href="https://github.com/jenil/chota/releases/tag/v0.2.0">version 0.2.0</a> coming out the next day. New versions were released every everyday until <a href="https://github.com/jenil/chota/releases/tag/v0.3.3">version 0.3.3</a>, then <a href="https://github.com/jenil/chota/releases/tag/v0.3.4"version 0.3.4></a> come out in September of the same year.
+            <br> <br>
+            The <a href="https://github.com/jenil/chota#browsers-support">browser support</a> is very limited, for a majority of the browsers it's the last 2 versions, with IE / Edge it's only Edge 16 or higher. I assume this is done so there doesn't have to be many tests done to ensure all browsers support the features added.
         </div> <!-- end column -->
 
-        <div class="column">
+        <div class="col">
             The idea for this came from <a href="https://1mb.club/">1MB Club</a>.
             <br> <br>
             My challenge is to make a number of webpages that are 1MB or less in size. I will be creating a number of different pages in different ways.
@@ -52,7 +60,7 @@
     <br> <br>
 
     <div class="row">
-        <div class="column">
+        <div class="col">
             Other pages that are less than 1MB in size:
             <br>
             <a href="index.html">Homepage (with no stylesheet)</a>
@@ -71,7 +79,6 @@
         </div> <!-- end of column -->
     </div> <!-- end of row -->
 
-</div> <!-- end of container -->
 
 </body>
 
