@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Picnic CSS | 1MB Web Pages</title>
+  <meta name="description" content="Using Picnic CSS on a website that is under 1MB in size.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon, thanks to https://realfavicongenerator.net
+    Original image:  "one"(https://www.flickr.com/photos/16167252@N00/2893549851) by andrechinn(https://www.flickr.com/photos/16167252@N00) is licensed with CC BY 2.0(https://creativecommons.org/licenses/by/2.0/). -->
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Picnic CSS framework (https://picnicss.com/) loaded from JSDelivr(https://www.jsdelivr.com/package/npm/picnic) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic@6.5.3/picnic.min.css" integrity="sha256-ggCOEWlfIVaTFs5aAKOre2kSRmjN8U5Ml2ZpVyPkNkE=" crossorigin="anonymous">
+
+  <!-- My own modifications to the framework, to ensure it looks better and is easier to read. Have to use !important to overwrite what the framework has written. -->
+  <style>
+    .flex
+    {
+      margin-left: 0px !important;
+      width: 100% !important
+    }
+  </style>
+
+</head>
+
+<body>
+    <h1>Picnic CSS</h1>
+    <br>
+      <!-- Info about Picnic CSS here. -->
+      <div class="flex two demo">
+        <p>
+          <!-- In the documentation for grids(https://picnicss.com/documentation#grids), it tells you to use div then span for each column, but when I did that it moved this first p to the right and moved the 2nd p over to the left bottom side. -->
+          There is very little information about Picnic CSS other than what is already on their <a href="https://github.com/franciscop/picnic">github repo</a> or <a href="https://picnicss.com/">their website</a>.
+          <br> <br>
+          The repo doesn't even contain the very first release, it starts at <a href="https://github.com/franciscop/picnic/releases/tag/v3.0">version 3.0</a> which was released on Febuary 4th 2015. The releases don't even contain the .css file that is the framework, you would either need to download the entire source code or use a CDN that lets you point to an old version. </p>
+          <p>The idea for this came from <a href="https://1mb.club/">1MB Club</a>.
+            My challenge is to make a number of webpages that are 1MB or less in size. I will be creating a number of different pages in different ways.</p>
+        </p>
+      </div> <!-- end flex two demo -->
+
+      <div class="flex others">
+        <p>
+          Other pages that are less than 1MB in size:
+          <br>
+          <a href="index.html">Homepage (with no stylesheet)</a>
+        </p>
+      </div> <!-- end flex others -->
+
+</body>
+
+</html>

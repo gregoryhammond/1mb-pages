@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Grid | 1MB Web Pages</title>
+  <meta name="description" content="CSS Grid website that is less than 1MB in size.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon, thanks to https://realfavicongenerator.net
+    Original image:  "one"(https://www.flickr.com/photos/16167252@N00/2893549851) by andrechinn(https://www.flickr.com/photos/16167252@N00) is licensed with CC BY 2.0(https://creativecommons.org/licenses/by/2.0/). -->
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <style>
+      /* Huge thanks to https://grid.layoutit.com for the basis of this style */
+      .grid-container 
+      {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px; /* having a space so can easily see there is a space and that this is done using gap in css grid */
+        grid-template-areas:
+            "title"
+            "content"
+            "links";
+      }
+
+      .title 
+      { 
+          grid-area: title; 
+      }
+      .content 
+      { 
+          grid-area: content; 
+      }
+      .links 
+      { 
+          grid-area: links; 
+      }
+
+  </style>
+
+</head>
+
+<body>
+ <div class="grid-container">
+
+     <div class="title">
+       <h1>CSS Grid</h1>
+     </div> <!-- end title -->
+     
+     <div class="content">
+        <hr>
+       <p>CSS grid is a 2D grid-based layout system. It doesn't require any additional frameworks or libraries. At the time of writing CSS Grid is supported by 96.09% of all browsers according to <a href="https://caniuse.com/css-grid">Can I Use</a>.</p>
+
+       <br> <br>
+
+       <p>Instead of re-writing what already has been written about the history of CSS Grid, you can read the detailed article on the history of CSS Grid at <a href="https://alistapart.com/article/the-story-of-css-grid-from-its-creators/">A List Apart</a>. </p>
+     </div> <!-- end of content -->
+
+    <br> <br>
+
+    <div class="links">
+        <hr>
+       <p>
+          Other pages that are less than 1MB in size:
+        <br>
+        <a href="index.html">Homepage (with no stylesheet)</a>
+    </p>
+    </div> <!-- end of links -->
+
+</div> <!-- end of grid-container -->
+
+</body>
+
+</html>
