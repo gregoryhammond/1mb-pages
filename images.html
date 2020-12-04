@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Images | 1MB Web Pages</title>
+  <meta name="description" content="Showing off images and how some of them can be made smaller in size.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon, thanks to https://realfavicongenerator.net
+    Original image:  "one"(https://www.flickr.com/photos/16167252@N00/2893549851) by andrechinn(https://www.flickr.com/photos/16167252@N00) is licensed with CC BY 2.0(https://creativecommons.org/licenses/by/2.0/). -->
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Using Pure CSS Framework (https://purecss.io/), loaded from JSDelivr(https://www.jsdelivr.com/) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.0.3/build/pure-min.css" integrity="sha256-AYjWoduA0BJ4vwq+ISyw5uryLXRLvNwx2eKZ+/Ghs9o=" crossorigin="anonymous">
+
+  <!-- Also including the Pure CSS responsive grid framework -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.0.3/build/grids-responsive-min.css" integrity="sha256-DkC+cvw0BrHloXONOEue/8lKU1c859M6/ATnknnsbFs=" crossorigin="anonymous">
+
+  <!-- Making sure there is some space -->
+  <style>
+      .pure-u-1-3
+      {
+          margin-right: 1px;
+      }
+  </style>
+
+</head>
+
+<body>
+    <div class="pure-u-1">
+        <h1>Images</h1>
+    </div> <!-- end pure-u-1 -->
+
+<!-- This image comes from https://unsplash.com/photos/F1_SdW1W93Y -->
+    <div class="pure-g">
+
+    <div class="pure-u-1-4">
+      This is a regular image using img within HTML5 and it is responsive because of <a href="https://purecss.io/">Pure framework</a>. The size of this image is 256.9 kB.
+      <br>
+      <img class="pure-img" src="image.jpg" alt="Viewing the green and out to the mountains">
+    </div> <!-- end pure-u-1-4 -->
+
+    <div class="pure-u-1-4">
+        This is the same image but uploaded to <a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/atgngbnswtfuaadqe4eb" rel="nofollow">Cloudinary</a> (affiliate link) set the format to auto (using the best image extension for you), and set quality to auto: good ("Automatically calculate the optimal quality an image: the smallest file size without affecting its perceptual quality"). For me that means the image transferred size is now 131.17 kB.
+        <br>
+        <img class="pure-img" src="https://res.cloudinary.com/doklvodcx/image/upload/f_auto,q_auto:good/v1607108893/image_fneokw.jpg" alt="Viewing the green and out to the mountains">
+    </div> <!-- end pure-u-1-4 -->
+
+    <div class="pure-u-1-4">
+        Format set to auto, but quality set to auto:low ("Automatically calculate the optimal quality for images using the most aggressive algorithm"). For me that means the image transferred size is now 106.05 kB.
+        <br>
+        <img class="pure-img" src="https://res.cloudinary.com/doklvodcx/image/upload/f_auto,q_auto:low/v1607108893/image_fneokw.jpg" alt="Viewing the green and out to the mountains">
+    </div> <!-- end pure-u-1-4-->
+
+    <div class="pure-u-1-4">
+        <!-- Empty space here so all 3 line up on the same line. -->
+    </div> <!-- end pure-u-1-4-->
+
+</div> <!-- end pure-g -->
+
+</body>
+
+</html>
