@@ -21,6 +21,29 @@
   <!-- Spectre framework CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectre.css@0.5.9/dist/spectre.min.css" integrity="sha256-vrblgX5/Hxa+hCarxXHkiC7lv9vz0k3mNiPKUBjY96o=" crossorigin="anonymous">
 
+  <!-- Responsive youtube video, thanks https://embedresponsively.com/ -->
+  <style>
+
+  .embed-container 
+  { 
+      position: relative; 
+      padding-bottom: 56.25%; 
+      height: 0; 
+      overflow: hidden; 
+      max-width: 100%; 
+  } 
+  
+  .embed-container iframe, .embed-container object, .embed-container embed 
+  { 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+  }
+  
+  </style>
+
 </head>
 
 <body>
@@ -34,9 +57,10 @@
         <div class="column col-5">
             <p> Youtube video (738.36 kB):
                 <br>
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/2DUc7jz9OyU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <!-- Done using embedresponsively.com -->
-                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/2DUc7jz9OyU' frameborder='0' allowfullscreen></iframe></div>
+                    <!-- Using embedresponsively.com to get this to be responsive -->
+                    <div class='embed-container'>
+                        <iframe src='https://www.youtube.com/embed/2DUc7jz9OyU' frameborder='0' allowfullscreen></iframe> 
+                    </div>
             </p>
         </div> <!-- end of column col-5 -->
 
@@ -60,9 +84,27 @@
         </p>
         </div> <!-- end of column col-2 -->
 
+        <div class="column col-5">
+            <a href="https://plyr.io/">Plyr</a> video player (750.69 kB):
+            <div class="video-responsive">
+                <div class="plyr__video-embed" id="player">
+                    <iframe
+                      src="https://www.youtube.com/embed/kNovwPIWr3Q?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                      allowfullscreen
+                      allowtransparency
+                      allow="autoplay"
+                    ></iframe>
+                  </div>
+        </div>  <!-- end video-responsive -->
+
+        </div> <!-- end of column col-5 -->
+
     </div> <!-- end columns -->
 
  </div> <!-- end container-fluid -->
+
+ <!-- Plyr.io video player -->
+ <script src="https://cdn.jsdelivr.net/npm/plyr@3.6.3/dist/plyr.min.js" integrity="sha256-PPKU/OcuQC/IkS80jPOFWlUBy5Vdvu2qku6mpHpDT+E=" crossorigin="anonymous"></script>
  
 </body>
 
